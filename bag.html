@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="티골프 피팅 - Bag 카테고리">
+    <title>Bag - T-Golf Fitting</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/category.css">
+    <link rel="stylesheet" href="css/footer.css">
+    
+    <!-- Custom Font Style -->
+    <style>
+        .nav-menu-link {
+            font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', -apple-system, sans-serif !important;
+            font-size: 14px !important;
+            font-weight: 400 !important;
+            letter-spacing: 0 !important;
+            color: #333333 !important;
+        }
+        
+        .nav-menu-link:hover {
+            color: var(--color-brand) !important;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <div id="header-placeholder"></div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Breadcrumb -->
+        <section class="breadcrumb">
+            <div class="breadcrumb-inner">
+                <div class="breadcrumb-path">
+                    <a href="index.html" class="breadcrumb-link">홈</a>
+                    <span class="breadcrumb-separator">/</span>
+                    <span class="breadcrumb-current">Bag</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Page Title -->
+        <section class="page-title-section">
+            <div class="container">
+                <h1 class="page-title">Bag</h1>
+            </div>
+        </section>
+
+        <!-- New Arrival Section -->
+        <section class="new-arrival-section">
+            <div class="container">
+                <div class="new-arrival-header">
+                    <h2 class="new-arrival-title">New Arrival</h2>
+                    <p class="new-arrival-subtitle">따끈따끈한 새로운 신상품</p>
+                </div>
+
+                <div class="new-arrival-grid" id="newArrivalGrid">
+                    <!-- New arrival products will be loaded here by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Grid Section -->
+        <section class="category-product-section">
+            <div class="container">
+                <!-- Product Grid Controls -->
+                <div class="product-grid-controls">
+                    <div class="product-count">
+                        총 <strong>8</strong>개의 상품이 있습니다
+                    </div>
+                    <div class="product-sort">
+                        <select id="sortSelect" class="sort-select">
+                            <option value="date">등록일순</option>
+                            <option value="price-low">낮은가격순</option>
+                            <option value="price-high">높은가격순</option>
+                            <option value="name">상품명순</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Product Grid -->
+                <div class="category-product-grid" id="categoryProductGrid">
+                    <!-- Products will be loaded here by JavaScript -->
+                </div>
+
+                <!-- Pagination -->
+                <div class="pagination">
+                    <button class="pagination-btn disabled" aria-label="이전">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                            fill="currentColor">
+                            <path d="M11 2L5 8l6 6V2z" />
+                        </svg>
+                    </button>
+                    <button class="pagination-btn active">1</button>
+                    <button class="pagination-btn">2</button>
+                    <button class="pagination-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                            fill="currentColor">
+                            <path d="M5 2l6 6-6 6V2z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- JavaScript -->
+    <script src="js/layout-loader.js"></script>
+    <script src="js/category.js"></script>
+</body>
+
+</html>

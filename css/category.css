@@ -1,0 +1,215 @@
+/* Category Page Styles */
+
+/* Breadcrumb */
+.breadcrumb {
+    padding: 20px 0 10px;
+    background-color: var(--bg-white);
+}
+
+.breadcrumb-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+}
+
+.breadcrumb-path {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+    font-size: 12px;
+    color: var(--text-tertiary);
+}
+
+.breadcrumb-link {
+    color: var(--text-tertiary);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.breadcrumb-link:hover {
+    color: var(--text-primary);
+}
+
+.breadcrumb-separator {
+    color: var(--text-tertiary);
+}
+
+.breadcrumb-current {
+    color: var(--text-primary);
+}
+
+/* Page Title */
+.page-title-section {
+    padding: 30px 0 50px;
+    background-color: var(--bg-white);
+}
+
+.page-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--text-primary);
+    text-align: center;
+}
+
+/* New Arrival Section */
+.new-arrival-section {
+    padding: 60px 0 40px;
+    background-color: var(--bg-white);
+}
+
+.new-arrival-header {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.new-arrival-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+}
+
+.new-arrival-subtitle {
+    font-size: var(--font-size-sm);
+    color: var(--text-tertiary);
+}
+
+.new-arrival-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 40px;
+    max-width: 900px;
+}
+
+.new-arrival-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background-color: var(--bg-black);
+    color: var(--text-white);
+    padding: 4px 12px;
+    font-size: var(--font-size-xs);
+    font-weight: bold;
+    z-index: 5;
+}
+
+.product-card {
+    position: relative;
+}
+
+/* Product Grid Controls */
+.product-grid-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.product-count {
+    font-size: var(--font-size-sm);
+    color: var(--text-tertiary);
+}
+
+.product-count strong {
+    color: var(--text-primary);
+    font-weight: bold;
+}
+
+.product-sort {
+    position: relative;
+}
+
+.sort-select {
+    padding: 8px 40px 8px 16px;
+    font-size: var(--font-size-sm);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-white);
+    cursor: pointer;
+    font-family: var(--font-family);
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23333' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+}
+
+.sort-select:hover {
+    border-color: var(--text-primary);
+}
+
+/* Category Product Grid */
+.category-product-section {
+    padding: 0 0 60px;
+}
+
+.category-product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+/* Ensure square thumbnails */
+.category-product-grid .product-image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    background-color: var(--bg-light);
+}
+
+.new-arrival-grid .product-image {
+    width: 100%;
+    max-width: 250px;
+    height: 300px;
+    object-fit: cover;
+    background-color: var(--bg-light);
+    margin: 0 auto;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 60px;
+    padding: 40px 0;
+}
+
+.pagination-btn {
+    min-width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-size-sm);
+    color: var(--text-tertiary);
+    background-color: var(--bg-white);
+    border: 1px solid var(--border-light);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.pagination-btn:hover {
+    background-color: var(--bg-light);
+    border-color: var(--border-color);
+}
+
+.pagination-btn.active {
+    background-color: var(--bg-black);
+    color: var(--text-white);
+    border-color: var(--bg-black);
+}
+
+.pagination-btn.disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.pagination-btn.disabled:hover {
+    background-color: var(--bg-white);
+    border-color: var(--border-light);
+}

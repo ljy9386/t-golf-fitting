@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="티골프 피팅 - 골프 가방, 퍼터, 악세사리 전문 쇼핑몰">
+    <title>T-Golf Fitting</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/store.css">
+    <link rel="stylesheet" href="css/footer.css">
+    
+    <!-- Custom Style for Index Page Only -->
+    <style>
+        /* Navigation Menu Font Override for Index Page */
+        .nav-menu-link {
+            font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', -apple-system, sans-serif !important;
+            font-size: 14px !important;
+            font-weight: 400 !important;
+            letter-spacing: 0 !important;
+            color: #333333 !important;
+        }
+        
+        .nav-menu-link:hover {
+            color: var(--color-brand) !important;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Slider -->
+        <section class="hero-slider">
+            <div class="slider-container">
+                <div class="slider-track" id="sliderTrack">
+                    <div class="slider-slide">
+                        <img src="images/hero/slide1.jpeg" alt="메인 슬라이드 1">
+                    </div>
+                    <div class="slider-slide">
+                        <img src="images/hero/slide2.jpeg" alt="메인 슬라이드 2">
+                    </div>
+                </div>
+
+                <button class="slider-arrow slider-arrow-prev" id="sliderPrev" aria-label="이전 슬라이드">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                </button>
+                <button class="slider-arrow slider-arrow-next" id="sliderNext" aria-label="다음 슬라이드">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </button>
+
+                <div class="slider-controls" id="sliderDots"></div>
+            </div>
+        </section>
+
+        <!-- NEW! ARRIVALS Section -->
+        <section class="product-section">
+            <div class="container">
+                <div class="product-section-header">
+                    <h2 class="product-section-title">NEW! ARRIVALS</h2>
+                    <p class="product-section-subtitle">언제나 새로운 신상품</p>
+                </div>
+
+                <div class="product-grid" id="newProducts">
+                    <!-- Products will be loaded here -->
+                </div>
+                <!-- View More Button -->
+                <div class="view-more-wrapper">
+                    <button class="view-more-btn">상품 더보기(1/71)</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ONLY! ON Carousel Section -->
+        <section class="carousel-section">
+            <div class="container">
+                <h2 class="carousel-title">ONLY! ON</h2>
+                <p class="carousel-subtitle">오직 온라인에서만 만나보세요</p>
+                <div class="carousel-wrapper">
+                    <button class="carousel-nav-btn carousel-prev" id="carouselPrev" aria-label="이전">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </button>
+                    <div class="carousel-container">
+                        <div class="carousel-track" id="carouselTrack">
+                            <!-- Products will be loaded by JavaScript -->
+                        </div>
+                    </div>
+                    <button class="carousel-nav-btn carousel-next" id="carouselNext" aria-label="다음">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+                </div>
+                <!-- Carousel Progress Bar -->
+                <div class="carousel-progress">
+                    <div class="carousel-progress-track">
+                        <div class="carousel-progress-bar" id="carouselProgressBar"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SCOTTY CAMERON Brand Section -->
+        <section class="brand-section">
+            <div class="brand-container">
+                <div class="brand-header">
+                    <h2 class="brand-title">SCOTTY CAMERON</h2>
+                    <p class="brand-subtitle">요즘 가장 핫한 스카티카메론 상품!</p>
+                </div>
+
+                <div class="brand-grid">
+                    <div class="brand-category">
+                        <a href="#" class="brand-category-link">
+                            <div class="brand-category-image-wrap">
+                                <img src="images/products/scotty-putter.jpg" alt="Scotty Cameron Putter" class="brand-category-image">
+                            </div>
+                            <div class="brand-category-info">
+                                <div class="brand-info-left">
+                                    <h3 class="brand-category-name">Scotty Cameron Putter</h3>
+                                    <span class="brand-more-text">자세히 살펴보기</span>
+                                </div>
+                                <span class="brand-more-arrow">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="9 18 15 12 9 6"></polyline>
+                                    </svg>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="brand-category">
+                        <a href="#" class="brand-category-link">
+                            <div class="brand-category-image-wrap">
+                                <img src="images/products/scotty-cover.jpg" alt="Scotty Cameron Putter Cover" class="brand-category-image">
+                            </div>
+                            <div class="brand-category-info">
+                                <div class="brand-info-left">
+                                    <h3 class="brand-category-name">Scotty Cameron Putter Cover</h3>
+                                    <span class="brand-more-text">자세히 살펴보기</span>
+                                </div>
+                                <span class="brand-more-arrow">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="9 18 15 12 9 6"></polyline>
+                                    </svg>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="brand-category">
+                        <a href="#" class="brand-category-link">
+                            <div class="brand-category-image-wrap">
+                                <img src="images/products/scotty-marker.jpg" alt="Scotty Cameron Ball Marker" class="brand-category-image">
+                            </div>
+                            <div class="brand-category-info">
+                                <div class="brand-info-left">
+                                    <h3 class="brand-category-name">Scotty Cameron Ball Marker</h3>
+                                    <span class="brand-more-text">자세히 살펴보기</span>
+                                </div>
+                                <span class="brand-more-arrow">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="9 18 15 12 9 6"></polyline>
+                                    </svg>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Champions Choice Banner -->
+        <section class="banner-section">
+            <img src="images/banners/champions-choice.jpeg" alt="Champions Choice" class="banner-image">
+        </section>
+
+        <!-- Hit Products Section -->
+        <section class="product-section">
+            <div class="container">
+                <div class="product-section-header">
+                    <h2 class="product-section-title">히트상품</h2>
+                    <p class="product-section-subtitle">고객님께 가장 추천하는 상품</p>
+                </div>
+
+                <div class="product-grid" id="hitProducts">
+                    <!-- Products will be loaded here -->
+                </div>
+
+                <!-- More Products Button -->
+                <div class="view-more-wrapper">
+                    <button class="view-more-btn">상품 더보기(1/2)</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Offline Store Section -->
+        <section class="offline-store-section">
+            <div class="offline-store-content">
+                <div class="offline-store-info">
+                    <h2 class="offline-store-title">티골프갤러리 오프라인 스토어</h2>
+                    <p class="offline-store-description">
+                        스카티카메론 전문 셀렉스토어,가방,퍼터,각종커버류<br>
+                        악세사리,희귀 한정판제품<br>
+                        정품만을 취급합니다
+                    </p>
+                    <div class="offline-store-details">
+                        <p><span class="detail-label">운영시간 :</span> 평일 09:00-22:00</p>
+                        <p>경기도 용인시 기흥구 원고매로2번길 128</p>
+                    </div>
+                    <button class="offline-store-btn">
+                        <span class="btn-text">VIEW MORE</span>
+                        <span class="btn-plus">+</span>
+                    </button>
+                </div>
+                <div class="offline-store-image">
+                    <img src="images/store/offline-store.jpg" alt="티골프갤러리 오프라인 스토어">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- JavaScript -->
+    <script src="js/layout-loader.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
