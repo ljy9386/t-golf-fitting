@@ -141,12 +141,12 @@ body {
         grid-template-columns: repeat(2, 1fr);
         gap: 25px 12px;
     }
-    
+
     .product-name {
         font-size: 12px;
         min-height: 36px;
     }
-    
+
     .product-price {
         font-size: 13px;
     }
@@ -157,7 +157,7 @@ body {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px 10px;
     }
-    
+
     .container {
         padding: 0 15px;
     }

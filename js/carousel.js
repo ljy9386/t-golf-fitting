@@ -4,37 +4,37 @@ document.addEventListener('DOMContentLoaded', function () {
         {
             name: '스카티카메론 2025 아카페코 스페셜팩',
             price: '2,200,000원',
-            image: 'images/products/product1.jpg'
+            image: 'images/products/product6.jpg'
         },
         {
             name: '스카티카메론 2025 퍼터스트랩 커버세트',
             price: '2,800,000원',
-            image: 'images/products/product2.jpg'
+            image: 'images/products/product7.jpg'
         },
         {
             name: '스카티카메론 SSS 티아이블랙스트 트리플',
             price: '17,000,000원',
-            image: 'images/products/product3.jpg'
+            image: 'images/products/product6.jpg'
         },
         {
             name: '스카티카메론 SSS 스카티독',
             price: '17,000,000원',
-            image: 'images/products/product4.jpg'
+            image: 'images/products/product7.jpg'
         },
         {
             name: '스카티카메론 SSS 티앤알',
             price: '17,000,000원',
-            image: 'images/products/product5.jpg'
+            image: 'images/products/product6.jpg'
         },
         {
             name: '스카티카메론 2025 아카페코 스페셜팩',
             price: '2,200,000원',
-            image: 'images/products/product1.jpg'
+            image: 'images/products/product7.jpg'
         },
         {
             name: '스카티카메론 2025 퍼터스트랩 커버세트',
             price: '2,800,000원',
-            image: 'images/products/product2.jpg'
+            image: 'images/products/product6.jpg'
         }
     ];
 
