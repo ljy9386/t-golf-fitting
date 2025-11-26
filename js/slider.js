@@ -19,8 +19,16 @@ class HeroSlider {
         this.createDots();
         
         // Event listeners
-        this.prevBtn.addEventListener('click', () => this.prevSlide());
-        this.nextBtn.addEventListener('click', () => this.nextSlide());
+        this.prevBtn.addEventListener('click', () => {
+            this.prevSlide();
+            // 수동 클릭 후에도 자동 재생 계속
+            this.startAutoPlay();
+        });
+        this.nextBtn.addEventListener('click', () => {
+            this.nextSlide();
+            // 수동 클릭 후에도 자동 재생 계속
+            this.startAutoPlay();
+        });
         
         // Auto play
         this.startAutoPlay();
@@ -36,7 +44,11 @@ class HeroSlider {
             dot.classList.add('slider-dot');
             if (i === 0) dot.classList.add('active');
             dot.setAttribute('aria-label', `슬라이드 ${i + 1}로 이동`);
-            dot.addEventListener('click', () => this.goToSlide(i));
+            dot.addEventListener('click', () => {
+                this.goToSlide(i);
+                // 수동 클릭 후에도 자동 재생 계속
+                this.startAutoPlay();
+            });
             this.dotsContainer.appendChild(dot);
         }
     }
@@ -66,7 +78,12 @@ class HeroSlider {
     }
     
     startAutoPlay() {
-        this.autoPlayInterval = setInterval(() => this.nextSlide(), 4000);
+        // 기존 인터벌이 있으면 제거
+        this.stopAutoPlay();
+        // 3초마다 자동으로 다음 슬라이드로 이동
+        this.autoPlayInterval = setInterval(() => {
+            this.nextSlide();
+        }, 5000);
     }
     
     stopAutoPlay() {

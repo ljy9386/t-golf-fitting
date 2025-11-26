@@ -61,8 +61,22 @@ Main Page Development
 [x] 고객센터 정보
 [x] SNS 아이콘
 
-[/] Verification
- 레퍼런스 사이트와 비교 검증
- 반응형 동작 확인
- 폰트/컬러/간격 정확도 확인
- 썸네일 크기 통일 확인
+[x] Style Extraction
+ [x] 레퍼런스 사이트 폰트 크기 추출 완료
+ [x] 폰트 컬러 추출 완료
+ [x] 폰트 두께 추출 완료
+ [x] Footer 레이아웃 및 사이징 문서화 완료
+ [x] Footer 포지셔닝 디테일 문서화 완료
+
+[x] Style Application
+ [x] CSS 변수 업데이트 (폰트 크기, 컬러, 두께)
+ [x] Footer CSS 업데이트 (레이아웃 복제)
+ [x] Main page 타이포그래피 업데이트
+ [x] Product card 타이포그래피 업데이트
+ [x] Header navigation 타이포그래피 업데이트
+ 
+[x] Verification
+ [x] 레퍼런스 사이트와 비교 검증
+ [x] 폰트/컬러/간격 정확도 확인
+ [x] 스타일 적용 동작 확인
+ [x] 타이포그래피 검증 완료

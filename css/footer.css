@@ -1,250 +1,230 @@
-/* Footer Styles - Exact match to reference */
+/* Footer Base Styles - Exact match to reference site */
 .footer {
     background-color: #f5f5f5;
-    padding: 40px 0 30px;
-    font-family: 'Nanum Gothic', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     width: 100%;
+    font-family: "Montserrat", "Noto Sans KR", Arial, sans-serif;
+    font-size: 13px;
+    color: rgb(0, 0, 0);
 }
 
 .footer-container {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 0 50px;
+    margin: 0 76px;
+    padding: 100px 0 70px;
+    color: rgb(26, 26, 26);
 }
 
-/* Footer Top - Logo */
-.footer-top {
-    margin-bottom: 25px;
-}
-
+/* Logo */
 .footer-logo {
-    display: inline-flex;
-    align-items: center;
-    text-decoration: none;
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: rgb(26, 26, 26);
 }
 
-.footer-logo-img {
-    height: 28px;
+.footer-logo a {
+    display: inline-block;
+}
+
+.footer-logo img {
+    height: 50px;
     width: auto;
 }
 
-/* Footer Menu Links */
+/* Footer Menu */
 .footer-menu {
     display: flex;
-    align-items: center;
     gap: 25px;
-    margin-bottom: 25px;
-    padding-bottom: 0;
+    margin-bottom: 15px;
 }
 
 .footer-menu a {
-    font-size: 15px;
-    color: #555;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    color: rgb(26, 26, 26);
     text-decoration: none;
-    transition: color 0.2s ease;
 }
 
 .footer-menu a:hover {
-    color: #000;
-}
-
-.footer-link-bold {
-    font-weight: 700;
-    color: #333 !important;
-}
-
-/* Footer Main Content - 3 Column Layout */
-.footer-main {
-    display: grid;
-    grid-template-columns: 1fr 280px 200px;
-    gap: 60px;
-    margin-bottom: 40px;
-}
-
-/* Footer Section Title */
-.footer-section-title {
-    font-size: 15px;
-    font-weight: 700;
-    color: #333;
-    margin: 0 0 15px 0;
-}
-
-/* Footer Info List */
-.footer-info-list {
-    font-size: 14px;
-    line-height: 1.9;
-    color: #666;
-}
-
-.footer-info-list p {
-    margin: 0;
-}
-
-.info-label {
-    font-weight: 700;
-    color: #333;
-    margin-right: 4px;
-}
-
-.info-link {
-    color: #666;
-    text-decoration: none;
-    margin-left: 2px;
-    margin-right: 10px;
-}
-
-.info-link:hover {
     text-decoration: underline;
 }
 
-/* Customer Service Section */
-.footer-customer .footer-info-list p {
+.footer-menu strong {
+    font-weight: 500;
+}
+
+/* Main Wrap - 3 Column Layout */
+.bt_wrap {
+    display: flex;
+    height: 184px;
+    margin-bottom: 30px;
+    color: rgb(26, 26, 26);
+}
+
+/* Shop Info - Left Column */
+.footer-info {
+    width: 500px;
+    flex-shrink: 0;
+    margin-top: 10px;
+}
+
+.footer-info .title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 28px;
+    margin-bottom: 10px;
+    color: rgb(26, 26, 26);
+}
+
+.footer-info .title strong {
+    font-weight: 700;
+}
+
+.bt_info_list {
+    font-size: 12px;
+    line-height: 24px;
+    color: rgb(26, 26, 26);
+}
+
+.bt_info_list div {
     margin-bottom: 0;
 }
 
-.footer-cs-time {
-    margin-top: 5px;
+.bt_info_list span {
+    margin-right: 3px;
 }
 
-/* Footer Bottom */
-.footer-bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 25px;
-    border-top: 1px solid #ddd;
+.bt_info_list span strong {
+    font-weight: 600;
+    margin-right: 3px;
 }
 
-.footer-copyright {
+/* Customer Center - Middle Column */
+.bt_cscenter {
+    flex-shrink: 0;
+    margin-left: auto;
+    margin-right: 100px;
+}
+
+.bt_cscenter .title {
     font-size: 14px;
-    color: #999;
-    margin: 0;
-}
-
-/* SNS Links */
-.footer-sns {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.footer-sns-label {
-    font-size: 15px;
     font-weight: 700;
-    color: #333;
+    line-height: 28px;
+    margin-bottom: 10px;
+    margin-top: -50px;
+    color: rgb(26, 26, 26);
+}
+
+.bt_cscenter .title strong {
+    font-weight: 700;
+}
+
+.bt_cscenter>div {
+    font-size: 12px;
+    line-height: 24px;
+    color: rgb(26, 26, 26);
+}
+
+.bt_cscenter div div {
+    margin-bottom: 0;
+}
+
+.bt_cscenter strong {
+    font-weight: 600;
     margin-right: 5px;
 }
 
-.footer-sns-link {
+/* Payment Info - Right Column */
+.bt_bank {
+    flex-shrink: 0;
+}
+
+.bt_bank .title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 28px;
+    margin-bottom: 10px;
+    margin-top: -50px;
+    color: rgb(26, 26, 26);
+}
+
+.bt_bank .title strong {
+    font-weight: 700;
+}
+
+.bt_bank>div {
+    font-size: 12px;
+    line-height: 24px;
+    color: rgb(26, 26, 26);
+}
+
+.bt_bank div div {
+    margin-bottom: 0;
+}
+
+.bt_bank strong {
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+/* Bottom Wrap */
+.bt_wrap2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    border-top: 1px solid rgb(218, 218, 218);
+    color: rgb(26, 26, 26);
+}
+
+.bt_wrap2 .copyright {
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(168, 168, 168);
+    line-height: normal;
+}
+
+/* SNS */
+.bt_wrap2 .sns-area {
     display: flex;
     align-items: center;
+}
+
+.bt_wrap2 .sns-area strong {
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(26, 26, 26);
+    display: inline-block;
+    margin-right: 16px;
+}
+
+.bt_wrap2 .sns-area a {
+    display: inline-flex;
+    align-items: center;
     justify-content: center;
-    width: 24px;
-    height: 24px;
-    transition: opacity 0.2s ease;
-}
-
-.footer-sns-link:hover {
-    opacity: 0.7;
-}
-
-.footer-sns-link svg {
     width: 20px;
     height: 20px;
+    margin-left: 30px;
 }
 
-/* Responsive - Tablet */
-@media (max-width: 1024px) {
-    .footer-container {
-        padding: 0 30px;
-    }
-
-    .footer-main {
-        grid-template-columns: 1fr 1fr;
-        gap: 40px;
-    }
-
-    .footer-payment {
-        grid-column: 1 / -1;
-    }
+.bt_wrap2 .sns-area a:first-of-type {
+    margin-left: 0;
 }
 
-/* Responsive - Mobile */
-@media (max-width: 768px) {
-    .footer {
-        padding: 30px 0 25px;
-    }
+.bt_wrap2 .sns-area a img {
+    width: 20px;
+    height: 20px;
+    display: block;
+    filter: brightness(0) saturate(100%) invert(67%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+    opacity: 1;
+    transition: filter 0.2s ease;
+}
 
-    .footer-container {
-        padding: 0 20px;
-    }
+.bt_wrap2 .sns-area a:hover img {
+    filter: brightness(0) saturate(100%) invert(60%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+}
 
-    .footer-top {
-        margin-bottom: 20px;
-    }
-
-    .footer-logo-text {
-        font-size: 18px;
-    }
-
-    .footer-menu {
-        flex-wrap: wrap;
-        gap: 12px 20px;
-        margin-bottom: 20px;
-    }
-
-        .footer-menu a {
-            font-size: 14px;
-    }
-
-    .footer-main {
-        grid-template-columns: 1fr;
-        gap: 25px;
-        margin-bottom: 30px;
-    }
-
-    .footer-payment {
-        grid-column: auto;
-    }
-
-        .footer-section-title {
-            font-size: 14px;
-        margin-bottom: 10px;
-    }
-
-        .footer-info-list {
-            font-size: 13px;
-        line-height: 1.8;
-    }
-
-    .footer-bottom {
-        flex-direction: column;
-        gap: 20px;
-        padding-top: 20px;
-        text-align: center;
-    }
-
-        .footer-copyright {
-            font-size: 13px;
-        order: 2;
-    }
-
-    .footer-sns {
-        order: 1;
-        gap: 12px;
-    }
-
-        .footer-sns-label {
-            font-size: 14px;
-    }
-
-    .footer-sns-link {
-        width: 22px;
-        height: 22px;
-    }
-
-    .footer-sns-link svg {
-        width: 18px;
-        height: 18px;
-    }
+/* Naver Blog 아이콘도 #ababab 색상으로 변경 */
+.bt_wrap2 .sns-area a[aria-label="Naver Blog"] img {
+    filter: brightness(0) saturate(100%) invert(60%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
 }
