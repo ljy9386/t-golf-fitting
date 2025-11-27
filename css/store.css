@@ -122,93 +122,208 @@
 }
 
 /* Responsive */
-@media (max-width: 1280px) {
+/* ============================================
+   Mobile Responsive Design
+   ============================================ */
+
+/* 1919px ~ 1440px */
+@media (max-width: 1919px) and (min-width: 1440px) {
+    .offline-store-content {
+        width: 1150px;
+        height: 460px;
+    }
+
+    .offline-store-info {
+        padding: 45px 40px 45px 55px;
+        height: 460px;
+    }
+
+    .offline-store-image {
+        height: 460px;
+    }
+}
+
+/* 1439px ~ 1024px */
+@media (max-width: 1439px) and (min-width: 1024px) {
     .offline-store-content {
         width: 100%;
         height: auto;
+        max-width: 1000px;
     }
-    
+
     .offline-store-info {
+        padding: 45px 35px;
         height: auto;
     }
-    
+
     .offline-store-image {
         height: auto;
-        min-height: 400px;
+        min-height: 420px;
     }
-}
 
-@media (max-width: 1024px) {
-    .offline-store-content {
-        padding: 0 20px;
-    }
-    
-    .offline-store-info {
-        padding: 40px 35px;
-    }
-    
     .offline-store-title {
-        font-size: 25px;
+        font-size: 26px;
     }
 }
 
-@media (max-width: 768px) {
+/* 1023px ~ 768px */
+@media (max-width: 1023px) and (min-width: 768px) {
     .offline-store-section {
-        padding: 40px 0 100px 0;
+        padding: 50px 0 90px 0;
     }
-    
+
     .offline-store-content {
-        grid-template-columns: 1fr;
-        padding: 0;
+        width: 100%;
+        height: auto;
+        padding: 0 25px;
     }
-    
+
     .offline-store-info {
-        padding: 40px 20px;
-        order: 1;
+        padding: 40px 30px;
+        height: auto;
     }
-    
+
     .offline-store-image {
-        order: 2;
-        min-height: 300px;
+        height: auto;
+        min-height: 380px;
     }
-    
+
     .offline-store-title {
-        font-size: 23px;
+        font-size: 24px;
+        margin-bottom: 20px;
     }
-    
+
     .offline-store-description {
         font-size: 16px;
+        margin-bottom: 25px;
     }
-    
+
+    .offline-store-details {
+        margin-bottom: 25px;
+    }
+
     .offline-store-details p {
-        font-size: 16px;
+        font-size: 15px;
     }
 }
 
-@media (max-width: 480px) {
+/* 767px ~ 425px */
+@media (max-width: 767px) and (min-width: 425px) {
+    .offline-store-section {
+        padding: 40px 0 80px 0;
+    }
+
+    .offline-store-content {
+        grid-template-columns: 1fr;
+        width: 100%;
+        height: auto;
+        padding: 0 20px;
+    }
+
+    .offline-store-info {
+        padding: 35px 20px;
+        order: 1;
+        height: auto;
+    }
+
+    .offline-store-image {
+        order: 2;
+        height: auto;
+        min-height: 300px;
+    }
+
+    .offline-store-title {
+        font-size: 22px;
+        margin-bottom: 18px;
+    }
+
+    .offline-store-description {
+        font-size: 15px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    .offline-store-details {
+        margin-bottom: 20px;
+    }
+
+    .offline-store-details p {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .offline-store-btn {
+        padding: 20px 22px 19px 22px;
+        font-size: 13px;
+        gap: 6px;
+    }
+
+    .offline-store-btn .btn-plus {
+        font-size: 18px;
+    }
+}
+
+/* 424px ~ 0px */
+@media (max-width: 424px) {
+    .offline-store-section {
+        padding: 35px 0 70px 0;
+    }
+
+    .offline-store-content {
+        grid-template-columns: 1fr;
+        width: 100%;
+        height: auto;
+        padding: 0 15px;
+    }
+
     .offline-store-info {
         padding: 30px 15px;
+        order: 1;
+        height: auto;
     }
-    
+
     .offline-store-image {
+        order: 2;
+        height: auto;
         min-height: 250px;
     }
-    
-    .more-products-btn {
-        padding: 12px 40px;
-    }
-    
+
     .offline-store-title {
-        font-size: 21px;
+        font-size: 20px;
+        margin-bottom: 15px;
     }
-    
+
+    .offline-store-description {
+        font-size: 14px;
+        line-height: 1.4;
+        margin-bottom: 18px;
+    }
+
+    .offline-store-details {
+        margin-bottom: 18px;
+    }
+
+    .offline-store-details p {
+        font-size: 13px;
+        line-height: 1.3;
+    }
+
+    .more-products-btn {
+        padding: 10px 35px;
+        font-size: 13px;
+    }
+
+    .offline-store-btn {
+        padding: 18px 20px 17px 20px;
+        font-size: 12px;
+        gap: 5px;
+    }
+
     .offline-store-btn .btn-text {
-        padding: 12px 20px;
-        font-size: 15px;
+        letter-spacing: 0.5px;
     }
-    
+
     .offline-store-btn .btn-plus {
-        padding: 12px 15px;
-        font-size: 18px;
+        font-size: 16px;
     }
 }

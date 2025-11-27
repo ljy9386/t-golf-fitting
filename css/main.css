@@ -435,12 +435,63 @@
     object-position: center;
 }
 
-/* Responsive */
-@media (max-width: 1024px) {
+/* ============================================
+   Mobile Responsive Design
+   ============================================ */
 
+/* 1919px ~ 1440px */
+@media (max-width: 1919px) and (min-width: 1440px) {
     .hero-slider,
     .slider-slide img {
-        height: 400px;
+        height: 550px;
+    }
+
+    .section-title {
+        font-size: 22px;
+    }
+
+    .carousel-wrapper {
+        padding: 0 50px;
+    }
+
+    .carousel-item {
+        min-width: calc((100% - (20px * 4)) / 5);
+    }
+
+    .brand-container {
+        padding: 0 40px;
+    }
+
+    .brand-grid {
+        gap: 35px;
+    }
+}
+
+/* 1439px ~ 1024px */
+@media (max-width: 1439px) and (min-width: 1024px) {
+    .hero-slider,
+    .slider-slide img {
+        height: 450px;
+    }
+
+    .section-title {
+        font-size: 21px;
+    }
+
+    .product-section {
+        padding: 50px 0 40px;
+    }
+
+    .carousel-section {
+        padding: 50px 0;
+    }
+
+    .carousel-wrapper {
+        padding: 0 40px;
+    }
+
+    .carousel-item {
+        min-width: calc((100% - (20px * 3)) / 4);
     }
 
     .brand-container {
@@ -448,12 +499,7 @@
     }
 
     .brand-grid {
-        gap: 20px;
-    }
-
-    .brand-grid {
         gap: 30px;
-        padding: 0 30px;
     }
 
     .brand-category-name {
@@ -470,11 +516,15 @@
     }
 }
 
-@media (max-width: 768px) {
-
+/* 1023px ~ 768px */
+@media (max-width: 1023px) and (min-width: 768px) {
     .hero-slider,
     .slider-slide img {
-        height: 300px;
+        height: 350px;
+    }
+
+    .section-title {
+        font-size: 20px;
     }
 
     .product-section {
@@ -490,7 +540,7 @@
     }
 
     .brand-container {
-        padding: 0 20px;
+        padding: 0 25px;
     }
 
     .brand-header {
@@ -498,11 +548,11 @@
     }
 
     .brand-title {
-        font-size: 26px;
+        font-size: 24px;
     }
 
     .carousel-wrapper {
-        padding: 0 40px;
+        padding: 0 30px;
     }
 
     .carousel-item {
@@ -511,43 +561,145 @@
 
     .brand-grid {
         grid-template-columns: 1fr;
-        gap: 40px;
-        max-width: 400px;
+        gap: 35px;
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 0 25px;
+    }
+
+    .brand-category-name {
+        font-size: 15px;
+    }
+
+    .view-more-btn {
+        padding: 11px 35px;
+        font-size: 14px;
+    }
+}
+
+/* 767px ~ 425px */
+@media (max-width: 767px) and (min-width: 425px) {
+    .hero-slider,
+    .slider-slide img {
+        height: 280px;
+    }
+
+    .section-title {
+        font-size: 18px;
+    }
+
+    .product-section {
+        padding: 35px 0 25px;
+    }
+
+    .carousel-section {
+        padding: 35px 0;
+    }
+
+    .brand-section {
+        padding: 40px 0;
+    }
+
+    .brand-container {
+        padding: 0 20px;
+    }
+
+    .brand-header {
+        margin-bottom: 25px;
+    }
+
+    .brand-title {
+        font-size: 22px;
+    }
+
+    .carousel-wrapper {
+        padding: 0 20px;
+    }
+
+    .carousel-item {
+        min-width: calc((100% - (15px * 1)) / 2);
+    }
+
+    .brand-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        max-width: 100%;
         margin: 0 auto;
         padding: 0 20px;
     }
 
     .brand-category-name {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .view-more-btn {
-        padding: 12px 40px;
+        padding: 10px 30px;
+        font-size: 13px;
     }
 }
 
-@media (max-width: 480px) {
-
+/* 424px ~ 0px */
+@media (max-width: 424px) {
     .hero-slider,
     .slider-slide img {
         height: 200px;
     }
 
-    .carousel-item {
-        min-width: calc((100% - 20px) / 2);
+    .section-title {
+        font-size: 16px;
+    }
+
+    .product-section {
+        padding: 30px 0 20px;
+    }
+
+    .carousel-section {
+        padding: 30px 0;
+    }
+
+    .brand-section {
+        padding: 35px 0;
+    }
+
+    .brand-container {
+        padding: 0 15px;
+    }
+
+    .brand-header {
+        margin-bottom: 20px;
     }
 
     .brand-title {
-        font-size: 24px;
-        letter-spacing: 1px;
+        font-size: 20px;
+        letter-spacing: 0.5px;
     }
 
     .brand-subtitle {
-        font-size: 12px;
+        font-size: 11px;
+    }
+
+    .carousel-wrapper {
+        padding: 0 15px;
+    }
+
+    .carousel-item {
+        min-width: calc((100% - 15px) / 2);
     }
 
     .brand-grid {
         grid-template-columns: 1fr;
+        gap: 25px;
         max-width: 100%;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    .brand-category-name {
+        font-size: 13px;
+    }
+
+    .view-more-btn {
+        padding: 9px 25px;
+        font-size: 12px;
     }
 }
